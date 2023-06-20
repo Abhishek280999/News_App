@@ -19,6 +19,7 @@ const App = ()=> {
         color='#f11946'
         progress={progress} 
       />
+          <Switch>
           <Route exact path="/"><News setProgress={setProgress}  key="general"  category="general"/></Route> 
           <Route exact path="/business"><News setProgress={setProgress} key="business"  category="business"/></Route> 
           <Route exact path="/entertainment"><News setProgress={setProgress} key="entertainment"  category="entertainment"/></Route> 
@@ -27,6 +28,7 @@ const App = ()=> {
           <Route exact path="/science"><News setProgress={setProgress} key="science"  category="science"/></Route> 
           <Route exact path="/sports"><News setProgress={setProgress} key="sports"  category="sports"/></Route> 
           <Route exact path="/technology"><News setProgress={setProgress} key="technology"  category="technology"/></Route> 
+          </Switch>
         </Router> 
       </>
     )
